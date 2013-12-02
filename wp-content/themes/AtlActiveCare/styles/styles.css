@@ -1,0 +1,435 @@
+/*-- Reset ------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
+
+:focus {outline: 0;}
+body {line-height: 1;color: black;background: white;}
+ol, ul {list-style: none;}
+
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+
+a { text-decoration: none; }
+li { list-style: none; }
+p { 
+    margin: 0px; 
+    line-height: 1.2; 
+    -webkit-font-smoothing: antialiased;
+}
+.wrapper .body > p {
+     padding-right: 35px;
+     margin-bottom: 30px;
+}
+h1, h2, h3, h4 { margin: 0; }
+
+/*-- Utility Styles ------------------------------------------------------------------*/
+.left { float: left; }
+.right { float: right; }
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+/*-- Structure Styles ---------------------------------------------------------------*/
+body {  
+    font-size: 100%;
+    font-family: 'Raleway', 'helvetica', 'arial', sans-serif;
+    font-weight: 100;
+}
+#wrapper { width: 960px; position: relative; overflow: hidden; margin: 0 auto;}
+#footer { width: 960px; overflow: hidden; margin: 0 auto; }
+
+
+/*-- Nav Styles ---------------------------------------------------------------*/
+#navBar {  }
+#navBar ul {  }
+
+
+#header-meta {
+    color: #fff;
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    background-color: #9f1924;
+    background-image: -webkit-gradient(linear, left center, right center, from(#9f1924), to(#070504));
+    background-image: -webkit-linear-gradient(left, #9f1924, #070504);
+    background-image: -moz-linear-gradient(left, #9f1924, #070504);
+    background-image: -o-linear-gradient(left, #9f1924, #070504);
+    background-image: -ms-linear-gradient(left, #9f1924, #070504);
+    background-image: linear-gradient(left, #9f1924, #070504);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#9f1924', EndColorStr='#070504');
+}
+
+.large {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#header {
+    background: #edece8 ;
+}
+ul.sections {
+    
+}
+ul.sections > li {
+    width: 20%;
+    margin: 0 2px 0 0;
+    float: left;
+}
+ul.sections > li:nth-child(1) {
+    margin-left: 70px;
+}
+ul.sections > li:nth-child(2), ul.sections > li:nth-child(3) {
+    width: 32%;
+}
+
+ul.sections > li:nth-child(3) {
+    margin: 20px 0 20px 20px;
+    padding: 20px;
+    box-sizing:border-box;
+    color: #fff;
+    font-size: 1.5em;
+    background: #7b9eae  ;
+}
+
+#logo {
+    background: -webkit-linear-gradient(#9f1924, #070504);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-weight:bold;
+    padding: 40px 0 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav {
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #999;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 35px 0 0 0;
+}
+#nav li {
+    margin: 0 5% 0 0;
+    line-height: 1;
+    padding: 0;
+    float: left;
+    width: 40%;
+}
+#nav li:nth-child(2), #nav li:nth-child(1) { 
+   padding: 15px 0 0 0
+}
+li:nth-child(2) a {
+    color: #58595b;
+    line-height: 2;
+    float: left;
+    display: block;
+    width: 47%;
+    margin: 0 3% 0 0;
+}
+#nav li a {
+    margin: 0;
+    line-height: 1;
+    padding: 4px 0;
+    width: 100%;
+    float: none;
+    font-weight: 500;
+}
+
+#hero {
+    position: relative;
+    background-image: none;
+}
+#hero h4 {
+    position: absolute;
+    bottom: 13%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    color: #444;
+    font-size: 13pt;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+#footer_sprite {
+    width: 100%;
+    min-width: 1100px;
+    margin: 10px auto 20px;
+    display: block;
+}
+#footer_sprite li {
+    float: left;
+    margin-right: 5px;
+    width: 14%;
+}
+#footer_sprite li a {
+    background: url('../images/active_care_sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+#footer_sprite li#active_release {
+    margin-left: 6.5%;   
+}
+#footer_sprite li#car_accident a{
+    background-position: -200px 0;
+}
+#footer_sprite li#crossfit_care a {
+    background-position: -400px 0;
+}
+#footer_sprite li#dance_medicine a{
+    background-position: -600px 0;
+}
+#footer_sprite li#pregnancy a{
+    background-position: -800px 0;
+}
+#footer_sprite li#massage a{
+    background-position: -1000px 0;
+}
+#new_patient {
+    background: #d7e2e6;
+    width: 325px;
+    margin-right: 30px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 825px;
+    float: left;
+}
+
+.wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+h1.title {
+  color: #7b9eae ;
+  font-weight: 500;
+    text-transform: uppercase;
+    font-size: 11pt;
+    margin: 50px 0 45px;
+}
+
+#contact li, #contact li > a {
+    color: #da4f29;
+    font-size: 9pt;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+}
+#contact li > img {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+#contact {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #777;
+}
+
+#policies li {
+    font-size: 9pt;  
+    color: #777;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#policies li strong {
+    font-weight: bold;
+}
+#policies li img {
+    width: 25px;    
+    height: 25px;
+    float: left;
+    margin: 0 5px 10px 0
+}
+
+li.heading {
+    color: #a21724;
+    font-weight: bold;
+    font-size: 10pt;
+    line-height: 7
+}
+
+#first_visit, #second_visit {
+    overflow: hidden;
+    margin-bottom: 10px
+}
+#first_visit li, #second_visit li {
+    float: left;
+    margin-right: 30px;
+    font-size: 10pt;    
+    text-align: center;
+}
+#first_visit li img, #second_visit li img {
+     width: 150px;
+    height: 100px;
+}
+
+
+/* ---------- Corner Rotate ------------------ */
+#box1 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 40%;
+    left: 37%;
+    background: green;
+}
+
+#servicesGrid {
+    width: 90%;
+    margin: 35px auto 50px;
+    list-style: none;
+    padding: 25px 0 15px 45px;
+    background: #EDECE8;
+}
+
+#serviceGrid li {
+    background-color: hsla(0, 0, 100, 0.7);
+}
+#servicesGrid a {
+    color: #fff;
+    text-shadow: 0px 0px 1px #000;
+    display: block;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 23;
+    opacity: .7;
+    
+    background: url('http://activecareatl.com/wp-content/themes/AtlActiveCare/images/service_sprite.png') 0 0 no-repeat;
+    
+}
+
+#servicesGrid a:hover {
+     opacity: 1;   
+}
+
+#servicesGrid li#img-aa a {
+    background-color: #fff;
+     background-position: -846px -205px;   
+}
+
+#servicesGrid li#img-ca a {
+     background-position: -632px -209px;   
+}
+
+#servicesGrid li#img-fg a {
+     background-position: -421px -208px;   
+}
+
+#servicesGrid li#img-kt a {
+     background-position: -216px -208px;   
+}
+
+#servicesGrid li#img-dm a {
+     background-position: 0px -205px;   
+}
+
+#servicesGrid li#img-cfc a {
+     background-position: -846px 5px;   
+}
+
+#servicesGrid li#img-pp a {
+     background-position: -632px 4px;   
+}
+
+#servicesGrid li#img-re a {
+     background-position: -421px 4px;
+}
+
+#servicesGrid li#img-els a {
+     background-position: -846px -205px;   
+}
+
+#servicesGrid li#img-aa a {
+     background-position: -846px -205px;   
+}
+
+#servicesGrid li#img-aa a {
+     background-position: -846px -205px;   
+}
+#servicesGrid li {
+    width: 200px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+#servicesGrid li:nth-child(1), #servicesGrid li:nth-child(6) {
+/*    margin-left: 4%;*/
+}
+
+#grid-content {
+    position: absolute;
+    width: 65%;
+    min-height: 100px;
+    top: 90%;
+    left: 17.5%;
+    z-index: 2000;
+    display: none;
+}
+#grid-content > div {
+    width: 100%;    
+    min-height: 50px;
+    background: #7B9EAE;
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: none;
+    position: relative;
+    color: #232323;
+}
+
+#grid-content > div a.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #000;
+}
+
+#shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    
+    background-color: #232323;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#070504), to(#232323));
+    background-image: -webkit-radial-gradient(50% 50%, #232323, #070504);
+    background-image: -moz-radial-gradient(50% 50%, #232323, #070504);
+    background-image: -o-radial-gradient(50% 50%, #232323, #070504);
+    background-image: -ms-radial-gradient(50% 50%, #232323, #070504);
+    background-image: radial-gradient(50% 50%, #232323, #070504);
+    opacity: .9;
+}
