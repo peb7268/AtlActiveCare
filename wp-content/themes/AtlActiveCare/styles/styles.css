@@ -30,6 +30,7 @@ p {
      margin-bottom: 30px;
 }
 h1, h2, h3, h4 { margin: 0; }
+strong { font-weight: bold; } 
 
 /*-- Utility Styles ------------------------------------------------------------------*/
 .left { float: left; }
@@ -42,23 +43,28 @@ h1, h2, h3, h4 { margin: 0; }
     visibility: hidden;
 }
 
+/* -- Colors & Aesthetics ---------------------------------------------------------------------------*/
+.red {
+    color: #9F1C20;
+}
 
+.light-blue-bg {
+    background: #e5ecef;
+}
+
+body .highlight {
+    font-size: 15pt;
+    margin: 0 0 20px;
+}
 
 /*-- Structure Styles ---------------------------------------------------------------*/
-body {  
+body, .highlight {  
     font-size: 100%;
     font-family: 'Raleway', 'helvetica', 'arial', sans-serif;
     font-weight: 100;
 }
 #wrapper { width: 960px; position: relative; overflow: hidden; margin: 0 auto;}
 #footer { width: 960px; overflow: hidden; margin: 0 auto; }
-
-
-/*-- Nav Styles ---------------------------------------------------------------*/
-#navBar {  }
-#navBar ul {  }
-
-
 #header-meta {
     color: #fff;
     width: 100%;
@@ -75,12 +81,10 @@ body {
     background-image: linear-gradient(left, #9f1924, #070504);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#9f1924', EndColorStr='#070504');
 }
-
 .large {
     font-weight: bold;
     font-size: 14pt;
 }
-
 #header {
     background: #edece8 ;
 }
@@ -98,7 +102,6 @@ ul.sections > li:nth-child(1) {
 ul.sections > li:nth-child(2), ul.sections > li:nth-child(3) {
     width: 32%;
 }
-
 ul.sections > li:nth-child(3) {
     margin: 20px 0 20px 20px;
     padding: 20px;
@@ -107,7 +110,6 @@ ul.sections > li:nth-child(3) {
     font-size: 1.5em;
     background: #7b9eae  ;
 }
-
 #logo {
     background: -webkit-linear-gradient(#9f1924, #070504);
   -webkit-background-clip: text;
@@ -117,7 +119,6 @@ ul.sections > li:nth-child(3) {
     padding: 40px 0 0;
     font-family: 'Raleway', sans-serif;
 }
-
 #nav {
     border-left: 1px solid #999;
     padding-left: 20px;
@@ -153,7 +154,6 @@ li:nth-child(2) a {
     float: none;
     font-weight: 500;
 }
-
 #hero {
     position: relative;
     background-image: none;
@@ -168,7 +168,6 @@ li:nth-child(2) a {
     line-height: 1.4;
     font-weight: 400;
 }
-
 
 #footer_sprite {
     width: 100%;
@@ -214,25 +213,26 @@ li:nth-child(2) a {
     padding: 20px;
     box-sizing: border-box;
 }
-
 .body {
     width: 825px;
     float: left;
 }
-
 .wrapper {
     width: 1180px;
     margin: 0 auto;
 }
-
-h1.title {
-  color: #7b9eae ;
-  font-weight: 500;
-    text-transform: uppercase;
-    font-size: 11pt;
-    margin: 50px 0 45px;
+.wrapper.andSidebar .inner {
+    width: 755px;
+    margin: 0 40px 50px 0;
+    float: left;
 }
-
+.title {
+    color: #7b9eae ;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14pt;
+    margin: 50px 0 33px;
+}
 #contact li, #contact li > a {
     color: #da4f29;
     font-size: 9pt;
@@ -248,13 +248,11 @@ h1.title {
     margin: 0 10px 0 0;
     float: left;
 }
-
 #contact {
     margin: 0 0 15px 0;
     padding-bottom: 15px;
     border-bottom: 1px dashed #777;
 }
-
 #policies li {
     font-size: 9pt;  
     color: #777;
@@ -270,14 +268,12 @@ h1.title {
     float: left;
     margin: 0 5px 10px 0
 }
-
 li.heading {
     color: #a21724;
     font-weight: bold;
     font-size: 10pt;
     line-height: 7
 }
-
 #first_visit, #second_visit {
     overflow: hidden;
     margin-bottom: 10px
@@ -292,9 +288,66 @@ li.heading {
      width: 150px;
     height: 100px;
 }
+.sidebar {
+    float: left;
+    width: 380px;
+    margin: 0;
+    overflow: hidden;
+}
 
+/* ---------- Sidebar1 ---------------------------------------*/
+.box {
+    border: 1px solid #a8a7a7;
+    padding: 20px 15px;
+    margin: 0 0 20px;
+}
+.sidebar .title { color: #777;  font-weight: bold; margin:0 0 7px; padding: 0;}
+.sidebar .title span { color: #333;  }
 
-/* ---------- Corner Rotate ------------------ */
+#clinicHours {}
+.sidebar ul li {
+    border-bottom: 1px dashed #777;
+    padding: 0 0 10px 0;
+    margin: 0px 0 10px;
+    font-size: 10pt;
+}
+.sidebar ul li.last {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.sidebar ul li p {
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 3px;
+}
+
+#reviewUs { padding-bottom: 5px; }
+#reviewUs li {
+    border: none;
+    float: left;
+    margin: 0 10px 0 0;
+}
+#reviewUs li a {
+    display:block;
+    width: 65px;
+    height: 75px;
+    margin-top: -10px;
+    line-height: 1;
+    background: url('http://activecareatl.com/wp-content/themes/AtlActiveCare/images/sm_sprite.png') 0 0 no-repeat;
+    text-indent: -9999px;
+}
+#reviewUs li#gp a {}
+#reviewUs li#fb a { background-position-x: -84px; width: 70px; height: 78px; }
+#reviewUs li#yelp a { background-position-x: -166px; width: 80px; height: 78px; }
+#reviewUs li#kudzu a { background-position-x: -250px; width: 90px; height: 90px; }
+
+#phoneConsult { padding-bottom: 7px; }
+#phoneConsult .title { font-weight: normal; }
+#phoneConsult .title span.red { color: #9F1C20; font-weight: bold; }
+#phoneConsult .title span#phone { font-size: 42pt; color: #999; font-family: sans-serif; font-weight: bold; }
+
+/* ---------- Services Page / Corner Rotate ------------------ */
 #box1 {
     position: absolute;
     width: 200px;
@@ -433,3 +486,42 @@ li.heading {
     background-image: radial-gradient(50% 50%, #232323, #070504);
     opacity: .9;
 }
+
+
+/* -- Contact Page ------------------------------------------------------------------------------------------ */
+form#contact {
+    width: 85%;
+    max-width: 755px;
+}
+form#contact input[type="text"], textarea {
+    width: 100%;
+    background: #edece8;
+    border: none;
+    padding: 7px;
+    box-sizing: border-box;
+}
+form#contact input[type="submit"] {
+    float: right;
+    width: 25%;
+    border: 1px solid #597280;
+    background: #7c9eb0;
+    color: #efefef;
+    padding: 5px;
+    font-size: 10pt;
+}
+form#contact input[type="submit"]:hover {
+    background: #6b8999;
+    cursor: pointer;
+}
+#directions { margin: 0 0 25px 0; }
+#directions > img {
+    float: left;
+    width: 352px;
+    margin: 0 20px 5px 0;
+}
+#directions > p {
+    float: left;
+    margin: 28px 0 0 0;
+    width: 340px;
+}
+#directions > p strong { color: #777; }
