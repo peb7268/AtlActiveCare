@@ -20,9 +20,9 @@ blockquote, q {quotes: "" "";}
 
 a { text-decoration: none; }
 li { list-style: none; }
-p { 
-    margin: 0px; 
-    line-height: 1.2; 
+p {
+    margin: 0px;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
 }
 .wrapper .body > p {
@@ -30,7 +30,7 @@ p {
      margin-bottom: 30px;
 }
 h1, h2, h3, h4 { margin: 0; }
-strong { font-weight: bold; } 
+strong { font-weight: bold; }
 
 /*-- Utility Styles ------------------------------------------------------------------*/
 .left { float: left; }
@@ -58,7 +58,7 @@ body .highlight {
 }
 
 /*-- Structure Styles ---------------------------------------------------------------*/
-body, .highlight {  
+body, .highlight {
     font-size: 100%;
     font-family: 'Raleway', 'helvetica', 'arial', sans-serif;
     font-weight: 100;
@@ -89,7 +89,7 @@ body, .highlight {
     background: #edece8 ;
 }
 ul.sections {
-    
+
 }
 ul.sections > li {
     width: 20%;
@@ -135,7 +135,7 @@ ul.sections > li:nth-child(3) {
     float: left;
     width: 40%;
 }
-#nav li:nth-child(2), #nav li:nth-child(1) { 
+#nav li:nth-child(2), #nav li:nth-child(1) {
    padding: 15px 0 0 0
 }
 li:nth-child(2) a {
@@ -188,7 +188,7 @@ li:nth-child(2) a {
     height: 100px;
 }
 #footer_sprite li#active_release {
-    margin-left: 6.5%;   
+    margin-left: 6.5%;
 }
 #footer_sprite li#car_accident a{
     background-position: -200px 0;
@@ -254,7 +254,7 @@ li:nth-child(2) a {
     border-bottom: 1px dashed #777;
 }
 #policies li {
-    font-size: 9pt;  
+    font-size: 9pt;
     color: #777;
     margin-bottom: 10px;
     overflow: hidden;
@@ -263,7 +263,7 @@ li:nth-child(2) a {
     font-weight: bold;
 }
 #policies li img {
-    width: 25px;    
+    width: 25px;
     height: 25px;
     float: left;
     margin: 0 5px 10px 0
@@ -281,7 +281,7 @@ li.heading {
 #first_visit li, #second_visit li {
     float: left;
     margin-right: 30px;
-    font-size: 10pt;    
+    font-size: 10pt;
     text-align: center;
 }
 #first_visit li img, #second_visit li img {
@@ -378,42 +378,42 @@ li.heading {
     vertical-align: middle;
     line-height: 23;
     opacity: .7;
-    
+
     background: url('http://activecareatl.com/wp-content/themes/AtlActiveCare/images/service_sprite.png') 0 0 no-repeat;
-    
+
 }
 
 #servicesGrid a:hover {
-     opacity: 1;   
+     opacity: 1;
 }
 
 #servicesGrid li#img-aa a {
     background-color: #fff;
-     background-position: -846px -205px;   
+     background-position: -846px -205px;
 }
 
 #servicesGrid li#img-ca a {
-     background-position: -632px -209px;   
+     background-position: -632px -209px;
 }
 
 #servicesGrid li#img-fg a {
-     background-position: -421px -208px;   
+     background-position: -421px -208px;
 }
 
 #servicesGrid li#img-kt a {
-     background-position: -216px -208px;   
+     background-position: -216px -208px;
 }
 
 #servicesGrid li#img-dm a {
-     background-position: 0px -205px;   
+     background-position: 0px -205px;
 }
 
 #servicesGrid li#img-cfc a {
-     background-position: -846px 5px;   
+     background-position: -846px 5px;
 }
 
 #servicesGrid li#img-pp a {
-     background-position: -632px 4px;   
+     background-position: -632px 4px;
 }
 
 #servicesGrid li#img-re a {
@@ -421,15 +421,15 @@ li.heading {
 }
 
 #servicesGrid li#img-els a {
-     background-position: -846px -205px;   
+     background-position: -846px -205px;
 }
 
 #servicesGrid li#img-aa a {
-     background-position: -846px -205px;   
+     background-position: -846px -205px;
 }
 
 #servicesGrid li#img-aa a {
-     background-position: -846px -205px;   
+     background-position: -846px -205px;
 }
 #servicesGrid li {
     width: 200px;
@@ -445,15 +445,16 @@ li.heading {
     position: absolute;
     width: 65%;
     min-height: 100px;
-    top: 90%;
+    top: 20%;
     left: 17.5%;
     z-index: 2000;
     display: none;
 }
 #grid-content > div {
-    width: 100%;    
+    width: 100%;
     min-height: 50px;
-    background: #7B9EAE;
+    background: #fff;
+    border: 1px solid #000;
     margin: 10px auto;
     padding: 10px 20px;
     display: none;
@@ -468,6 +469,122 @@ li.heading {
     color: #000;
 }
 
+#grid-content > div h4, #grid-content > div p {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#grid-content > div ul {
+    color: #232323;
+    font-size: 11pt;
+    -webkit-font-smoothing: antialiased;
+    margin: 15px 0 10px 20px;
+}
+
+#grid-content > div ul li {
+    list-style: disc;
+    margin: 0 0 2px 0;
+}
+
+#grid-content > div p {
+    font-size: 11pt;
+}
+
+#grid-content > div h4 {
+    font-size: 15pt;
+}
+
+#grid-content > div h4.title {
+    margin: 10px 0 20px 0;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#grid-content > div h4.highlight {
+    margin: 25px 0 15px 0;
+    /* color: #440d11; */
+    color: #9e1924;
+    font-weight: 400;
+}
+
+#grid-content > div .partners {
+    margin-bottom: 10px;
+}
+
+#grid-content > div .partners h4 {
+    text-align: center;
+    margin: 0 auto 4px;
+}
+
+.partners img {
+    margin: 0 auto;
+    max-width: 400px;
+    display: block;
+}
+
+#grid-content > div strong {
+    color: #333;
+    margin: 5px auto;
+}
+
+#grid-content > div #cis {
+    width: 80%;
+    margin: 20px auto 30px;
+}
+
+#grid-content > div #cis img {
+    max-width: 100%;
+}
+
+#grid-content > div #cis h4 {
+    text-align: center;
+}
+
+#grid-content > #dm #dance_med {
+    border-radius: 20px;
+}
+
+#grid-content > div #dance_pics {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#grid-content > div #dance_pics img {
+    max-width: 50%;
+    margin: 0 5px 0 0;
+}
+
+#grid-content #cfc {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#cfc img {
+    max-width: 100%;
+}
+
+#grid-content > div li.small {
+    list-style: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+em {
+    font-style: italic;
+}
+.img-right {
+    float: right;
+    max-width: 250px;
+    margin: 0 0 10px 20px;
+}
+
+.img-left {
+    max-width: 200px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
 #shade {
     position: absolute;
     top: 0;
@@ -476,7 +593,7 @@ li.heading {
     width: 100%;
     z-index: 1000;
     display: none;
-    
+
     background-color: #232323;
     background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#070504), to(#232323));
     background-image: -webkit-radial-gradient(50% 50%, #232323, #070504);
@@ -525,3 +642,4 @@ form#contact input[type="submit"]:hover {
     width: 340px;
 }
 #directions > p strong { color: #777; }
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+
+    <channel>
+        <title>DrLeeChiro</title>
+   	<link>.</link>
+        <generator>Jalbum 8.12</generator>
+   		<description></description>
+        
+        
+        <item>
+            <title>waitingroom</title>
+            <link>slides/waitingroom.jpg#</link>
+            <pubDate>Sun, 31 Oct 2010 15:41:13 -0400</pubDate>
+            <description>waiting area</description>
+            <media:description type="html">waiting area</media:description>
+            <media:thumbnail url="thumbs/waitingroom.jpg" width="140" height="100"/>
+            <media:content type="image/jpeg" url="slides/waitingroom.jpg" width="345" height="223"/>
+            
+            
+            <guid isPermaLink="false">slides/waitingroom.jpg</guid>
+        </item>
+        
+        <item>
+            <title>waitingroom2</title>
+            <link>slides/waitingroom2.jpg#</link>
+            <pubDate>Sun, 31 Oct 2010 15:41:13 -0400</pubDate>
+            <description>waiting area 2</description>
+            <media:description type="html">waiting area 2</media:description>
+            <media:thumbnail url="thumbs/waitingroom2.jpg" width="140" height="100"/>
+            <media:content type="image/jpeg" url="slides/waitingroom2.jpg" width="345" height="221"/>
+            
+            
+            <guid isPermaLink="false">slides/waitingroom2.jpg</guid>
+        </item>
+        
+        <item>
+            <title>tx2</title>
+            <link>slides/tx2.jpg#</link>
+            <pubDate>Sun, 31 Oct 2010 15:41:13 -0400</pubDate>
+            <description>treatment room</description>
+            <media:description type="html">treatment room</media:description>
+            <media:thumbnail url="thumbs/tx2.jpg" width="140" height="100"/>
+            <media:content type="image/jpeg" url="slides/tx2.jpg" width="345" height="225"/>
+            
+            
+            <guid isPermaLink="false">slides/tx2.jpg</guid>
+        </item>
+        
+        <item>
+            <title>xray</title>
+            <link>slides/xray.jpg#</link>
+            <pubDate>Sun, 31 Oct 2010 15:41:13 -0400</pubDate>
+            <description>X-ray Exam</description>
+            <media:description type="html">X-ray Exam</media:description>
+            <media:thumbnail url="thumbs/xray.jpg" width="140" height="100"/>
+            <media:content type="image/jpeg" url="slides/xray.jpg" width="345" height="221"/>
+            
+            
+            <guid isPermaLink="false">slides/xray.jpg</guid>
+        </item>
+        
+    </channel>
+</rss>
