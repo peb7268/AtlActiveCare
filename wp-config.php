@@ -10,6 +10,8 @@ define('DB_COLLATE', '');
 define('WP_HOME','http://activecareatl.com');
 define('WP_SITEURL','http://activecareatl.com');
 
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -55,7 +57,8 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_DISPLAY', true);
 
 /* That's all, stop editing! Happy blogging. */
 

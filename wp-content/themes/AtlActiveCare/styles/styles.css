@@ -389,7 +389,7 @@ li.heading {
 
 #servicesGrid li#img-aa a {
     background-color: #fff;
-     background-position: -846px -205px;
+    background-position: -201px 0px;
 }
 
 #servicesGrid li#img-ca a {
@@ -424,13 +424,6 @@ li.heading {
      background-position: -846px -205px;
 }
 
-#servicesGrid li#img-aa a {
-     background-position: -846px -205px;
-}
-
-#servicesGrid li#img-aa a {
-     background-position: -846px -205px;
-}
 #servicesGrid li {
     width: 200px;
     margin-right: 5px;
@@ -570,6 +563,37 @@ li.heading {
     font-size: 9pt;
 }
 
+#els > div.wrapper {
+    width: 65%;
+    margin: 0 5% 0 0;
+    float: left;
+}
+
+#els > div.wrapper #massage_inner .left {
+    float: left;
+    margin: 0;
+    width: 60%;
+}
+#els > div.wrapper #massage_inner .left:nth-child(1) {
+    width: 35%;
+    margin: 0 20px 0 0;
+}
+
+#els > div.wrapper #massage_inner h4.highlight {
+    margin-top: 0px;
+}
+
+#els > div.wrapper #massage_inner img {
+    display: block;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+#els > div.sidebar {
+    float: left;
+    width: 30%;
+}
+
 em {
     font-style: italic;
 }
@@ -604,6 +628,32 @@ em {
     opacity: .9;
 }
 
+
+/* -- Blog --*/
+#blog {
+    margin: 20px auto 0 auto;
+}
+
+article.post {
+    max-width: 300px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+#blog article.post .wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#blog article.post h1.title {
+    font-size: 20pt;
+    margin: 0 0 4px;
+}
+
+.post .attachment-post-thumbnail {
+    width: 100%;
+    height: 170px;
+}
 
 /* -- Contact Page ------------------------------------------------------------------------------------------ */
 form#contact {

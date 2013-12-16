@@ -1,6 +1,6 @@
 <?php
 define('THEME_DIR', get_template_directory_uri());
-define('CSS_DIR', THEME_DIR.'/styles');	
+define('CSS_DIR', THEME_DIR.'/styles');
 #define('IMG_DIR', THEME_DIR.'/images');
 #define('VIDEOS_DIR', THEME_DIR.'/videos');
 #define('SLIDESHOW_DIR', IMG_DIR.'/slideshow');
@@ -37,6 +37,7 @@ function themeSetup(){
     register_nav_menus( array(
         'Primary' => 'Primary Navigation Menu',
     ));
+    add_theme_support( 'post-thumbnails' );
 }
 
 function randomHero(){

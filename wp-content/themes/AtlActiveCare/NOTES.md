@@ -1,4 +1,6 @@
 
+- [ ] CHANGE FONT TO VARELA ( everything )
+
 - [ ] Hours/Contact comp recieved
 - [ ] News / Events - awaiting direction
 - [ ] services design done
@@ -8,3 +10,5 @@
 
 - [ ] debug the map location stuff once it's on a server
 - [ ] add fb icon to contact page
+
+- [ ] blog digg style layout
