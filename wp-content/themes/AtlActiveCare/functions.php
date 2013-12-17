@@ -49,8 +49,46 @@ function randomHero(){
     echo "<img src='http://localhost/clients/".$path[1]."' >";
 }
 
-
 function image(){
     $dir = get_bloginfo('stylesheet_directory').'/images/';
     return $dir;
+}
+
+function determine_link_type($post){
+    $cats = wp_get_post_categories($post->ID);
+    if(in_array(3, $cats)){
+        $url = get_post_meta($post->ID, 'url', true);
+    } else {
+        $url = get_permalink();
+    }
+    return $url;
+}
+
+function print_class($i){
+    if($i % 2 == 0){
+        return "class='odd'";
+    } else {
+        return "class='even'";
+    }
+}
+
+function dd($mixed){
+    switch(gettype($mixed)){
+        case "string":
+            var_dump($mixed);
+            die();
+        break;
+        case "object":
+            echo "<pre>";
+                var_dump($mixed);
+            echo "</pre>";
+            die();
+        break;
+        case "array":
+            echo "<pre>";
+                print_r($mixed);
+            echo "</pre>";
+            die();
+        break;
+    }
 }

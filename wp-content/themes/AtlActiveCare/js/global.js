@@ -2,7 +2,7 @@
     $('document').ready(function(){
 
         //Services Lightbox / Rotation
-        $('#servicesGrid li a').on('click', function(e){
+        $('#servicesGrid li a, .grid li a').on('click', function(e){
             e.preventDefault();
             var selector    =  $(this).attr('href');
 
@@ -93,5 +93,12 @@
         }
         }
         getLocation();
+
+        //Testimonial
+        $('.readMore').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().parent().find('.more').slideToggle(100)
+        });
+
     });
 }(jQuery));
