@@ -13,13 +13,16 @@
 
 	<article class="post">
 		<?php
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail();
-		}
-		?>
-	    <h1 class="title">
-	    	<?php the_title(); ?>
-	    </h1>
+		if ( has_post_thumbnail() ) {?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail(); ?>
+			</a>
+		<?php } ?>
+	    <a href="<?php the_permalink(); ?>">
+		    <h1 class="title">
+		    	<?php the_title(); ?>
+		    </h1>
+	    </a>
 	    <div class="wrapper clearfix">
 	        <?php the_content(); ?>
 	    </div>

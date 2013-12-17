@@ -17,16 +17,17 @@
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail();
 			}
+
 			$url = determine_link_type($post);
 		?>
 
-		<a href="<?php echo $url; ?>">
+		<!-- <a href="<?php //echo $url; ?>"> -->
 	    	<h1 class="title"><?php the_title(); ?></h1>
-		</a>
+		<!-- </a> -->
 	    <div class="wrapper clearfix">
 	        <?php the_content(); ?>
 	    </div>
-    </article>
+    </div>
 
     <?php $i++; endwhile; endif;  ?>
 

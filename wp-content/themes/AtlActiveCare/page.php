@@ -1,6 +1,7 @@
 <?php
 	get_header();
 	if (have_posts()) : while(have_posts()) : the_post();
+
 ?>
     <div class="wrapper">
         <h1 class="title"><?php the_title(); ?></h1>

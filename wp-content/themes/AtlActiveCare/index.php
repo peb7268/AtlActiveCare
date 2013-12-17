@@ -9,12 +9,12 @@
         </h4>
     </div>
     <ul id="footer_sprite" class="clearfix">
-        <li id="active_release"><a href="#"></a></li>
-        <li id="car_accident"><a href="#"></a></li>
-        <li id="crossfit_care"><a href="#"></a></li>
-        <li id="dance_medicine"><a href="#"></a></li>
-        <li id="pregnancy"><a href="#"></a></li>
-        <li id="massage"><a href="#"></a></li>
+        <li id="active_release"><a href="#">Active Release</a></li>
+        <li id="car_accident"><a href="#">Car Accident</a></li>
+        <li id="crossfit_care"><a href="#">Crossfit Care</a></li>
+        <li id="dance_medicine"><a href="#">Dance Medicine</a></li>
+        <li id="pregnancy"><a href="#">Pregnancy</a></li>
+        <li id="massage"><a href="#">Massage</a></li>
     </ul>
 
 <?php get_footer(); ?>

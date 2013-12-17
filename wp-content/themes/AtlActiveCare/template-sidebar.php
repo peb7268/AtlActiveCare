@@ -1,6 +1,6 @@
 <?php /* Template Name: 1 col &amp; Sidebar */ ?>
     <?php get_header(); ?>
-    <?php if (have_posts) : while(have_posts()) : the_post(); ?>
+    <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
         <div class="wrapper andSidebar">
             <h1 class="title"><?php the_title(); ?></h1>
         </div>
