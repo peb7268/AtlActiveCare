@@ -100,5 +100,13 @@
             $(this).parent().parent().find('.more').slideToggle(100)
         });
 
+        //Gallery
+        $('#gallery-nav li a').on('click', function(e){
+            e.preventDefault();
+            var target = $(e.target).attr('href');
+            $('.block', '#gallery #content').fadeOut(100, function(){
+                $(target, '#gallery #content').fadeIn(100);
+            }).removeAttr('style');
+        });
     });
 }(jQuery));

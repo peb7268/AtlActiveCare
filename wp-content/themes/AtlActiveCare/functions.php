@@ -5,9 +5,10 @@ define('CSS_DIR', THEME_DIR.'/styles');
 #define('VIDEOS_DIR', THEME_DIR.'/videos');
 #define('SLIDESHOW_DIR', IMG_DIR.'/slideshow');
 define('SCRIPTS_DIR', get_bloginfo('stylesheet_directory').'/js');
+define('SITE_URL', get_bloginfo('url'));
 
 //Hooks
-add_action('init', 'init');
+add_action('wp_loaded', 'init');
 
 #Custom Stuff
 function init(){
@@ -30,6 +31,9 @@ function registerScripts(){
 
 function loadScripts(){
     wp_enqueue_script('global');
+    if(is_page(13)){
+        die('here');
+    }
 }
 
 function themeSetup(){

@@ -327,12 +327,58 @@ li:nth-child(2) a {
     margin: 0 10px 0 0;
     float: left;
 }
-#contact {
+#contact, #policies {
     margin: 0 0 15px 0;
     padding-bottom: 15px;
-    border-bottom: 1px dashed #777;
+    /*border-bottom: 1px dashed #777;*/
+    position: relative;
 }
+#contact li {
+    line-height: 4;
+    padding-left: 80px;
+    margin-bottom: 5px;
+}
+#contact li#npf {
+    line-height: 4.5;
+}
+#contact li#npf span {
+    background-position: -483px -160px;
+    height: 60px;
+}
+#contact li.last {
+    border-bottom: none;
+}
+/* -- New Patient -- */
+.page-id-14 {}
+.page-id-14 .sidebar ul#contact li span, .page-id-14 .sidebar ul#policies li span {
+    background-image: url('../images/new_patient_sprite.png');
+    background-position: -483px -108px;
+    display: block;
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+}
+.page-id-14 .sidebar ul#policies li span {
+    background-image: url('../images/new_patient_sprite.png');
+    background-position: -572px -168px;
+    height: 22px;
+    width: 50px;
+}
+.page-id-14 .sidebar ul#policies li#cp span {
+    background-position: -572px -193px;
+    height: 27px;
+}
+.page-id-14 .sidebar ul#policies li#aa span {
+    background-position: -572px -110px;
+}
+.page-id-14 .sidebar ul#policies li#cc span {
+    background-position: -572px -136px;
+}
+
 #policies li {
+    position: relative;
+    padding-left: 50px;
     font-size: 9pt;
     color: #777;
     margin-bottom: 10px;
@@ -453,7 +499,7 @@ li:nth-child(2) a {
 #reviewUs li#kudzu a { background-position-x: -250px; width: 90px; height: 90px; }
 
 #phoneConsult { padding-bottom: 7px; }
-#phoneConsult .title { font-weight: normal; }
+#phoneConsult .title { font-weight: normal; font-size: 20pt; }
 #phoneConsult .title span.red { color: #9F1C20; font-weight: bold; }
 #phoneConsult .title span#phone { font-size: 42pt; color: #999; font-family: sans-serif; font-weight: bold; }
 
@@ -869,3 +915,15 @@ form#contact input[type="submit"]:hover {
     margin: 10px auto 0;
     display: none;
 }
+
+/*-- Gallery ------------------------------------------------------------------*/
+#gallery {}
+#gallery #gallery-nav {
+    width: 100px;
+    margin: 0 20px 0 0;
+    float: left;
+}
+#gallery #gallery-nav li { float: none; display: block; }
+#gallery #gallery-nav li a { display: block; float: none;}
+#gallery #content { float: left; width: 960px; }
+#gallery #content .block { display: none; }

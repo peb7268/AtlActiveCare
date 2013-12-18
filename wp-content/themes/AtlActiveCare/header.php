@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Varela|Raleway:400,200,800,900' rel='stylesheet' type='text/css'>
     <?php wp_head() ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 
 <h2 id="header-meta">Active Release Technique Provider > Johns Creek Chiropractor > Sports Injuries and Auto Accident > 6290 Abbotts Bridge Rd. #204 Johns Creek, GA 30097 > <span class="large">t: 770-559-4236</span></h1>

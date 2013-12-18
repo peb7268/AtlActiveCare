@@ -15,7 +15,7 @@
                 11am - 2pm
             </li>
             <li class="last">
-                <p>Sunday</p>       
+                <p>Sunday</p>
                 Closed
             </li>
         </ul>
@@ -32,11 +32,12 @@
                 11am - 6pm
             </li>
             <li class="last">
-                <p>Saturday | Sunday</p>       
+                <p>Saturday | Sunday</p>
                 Closed
             </li>
         </ul>
     </div>
+    <!--
     <div id="reviewUs" class="box">
         <p class="title">Review Us</p>
         <ul class="clearfix">
@@ -46,6 +47,7 @@
             <li id="kudzu"><a href="">Kudzu</a></li>
         </ul>
     </div>
+    -->
     <div id="phoneConsult" class="box">
         <p class="title">
             SCHEDULE YOUR <span class="red">FREE PHONE CONSULTATION</span> WITH OUR DOCTORS
