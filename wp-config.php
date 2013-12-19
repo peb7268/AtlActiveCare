@@ -10,7 +10,15 @@ define('DB_COLLATE', '');
 define('WP_HOME','http://activecareatl.com');
 define('WP_SITEURL','http://activecareatl.com');
 
+// define('DB_NAME', 'atlactivecare');
+// define('DB_USER', 'atlanuu8_8974769');
+// define('DB_PASSWORD', 'atlactivecare89754769');
+// define('DB_HOST', 'localhost');
+// define('DB_CHARSET', 'utf8');
+// define('DB_COLLATE', '');
 
+// define('WP_HOME','http://activecareatl.com');
+// define('WP_SITEURL','http://activecareatl.com');
 
 /**#@+
  * Authentication Unique Keys and Salts.

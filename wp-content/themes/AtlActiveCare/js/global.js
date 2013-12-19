@@ -1,6 +1,13 @@
 (function($){
     $('document').ready(function(){
-
+        if(window.location.hash.length > 0 && $('body').attr('class').split(" ")[1] == "page-id-9"){
+            //debugger
+            var id = window.location.hash;
+            var $elem = $('a[href="'+ id +'"]', '#servicesGrid');
+            window.setTimeout(function($elem){
+                $elem.trigger('click');
+            }, 500, $elem);
+        }
         //Services Lightbox / Rotation
         $('#servicesGrid li a, .grid li a').on('click', function(e){
             e.preventDefault();

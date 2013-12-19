@@ -10,12 +10,12 @@
     </div>
 
     <ul id="footer_sprite" class="clearfix">
-        <li id="active_release"><a href="<?php echo SITE_URL; ?>/services">Active Release</a></li>
-        <li id="car_accident"><a href="<?php echo SITE_URL; ?>/services">Car Accident</a></li>
-        <li id="crossfit_care"><a href="<?php echo SITE_URL; ?>/services">Crossfit Care</a></li>
-        <li id="dance_medicine"><a href="<?php echo SITE_URL; ?>/services">Dance Medicine</a></li>
-        <li id="pregnancy"><a href="<?php echo SITE_URL; ?>/services">Pregnancy</a></li>
-        <li id="massage"><a href="<?php echo SITE_URL; ?>/services">Massage</a></li>
+        <li id="active_release"><a href="<?php echo SITE_URL; ?>/services#aasi">Active Release</a></li>
+        <li id="car_accident"><a href="<?php echo SITE_URL; ?>/services#aa">Car Accident</a></li>
+        <li id="crossfit_care"><a href="<?php echo SITE_URL; ?>/services#cfc">Crossfit Care</a></li>
+        <li id="dance_medicine"><a href="<?php echo SITE_URL; ?>/services#dm">Dance Medicine</a></li>
+        <li id="pregnancy"><a href="<?php echo SITE_URL; ?>/services#pp">Pregnancy</a></li>
+        <li id="massage"><a href="<?php echo SITE_URL; ?>/services#re">Massage</a></li>
     </ul>
 
 <?php get_footer(); ?>
