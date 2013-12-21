@@ -26,7 +26,7 @@ p {
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     font-size: 11pt;
-    color: #232323;
+    color: #555;
 }
 .wrapper .body > p {
      padding-right: 35px;
@@ -115,12 +115,12 @@ body, .highlight {
     background: #edece8;
     width: 100%;
     min-width: 1500px;
-    height: 185px;
+    height: 175px;
     overflow: hidden;
 }
 #header {
     width: 1200px;
-    margin: 0 auto;
+    margin: -10px auto;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -135,7 +135,7 @@ body, .highlight {
     font-size: 21pt;
 }
 #cta-header .location {
-    font-size: 12pt;
+    font-size: 11pt;
     border-bottom: 1px dashed #FFF;
     margin: 0px 0 4px;
     padding: 0 0 7px;
@@ -270,7 +270,7 @@ li:nth-child(2) a {
     max-width: 1500px;
         min-width: 1100px;
     */
-    margin: 10px auto 20px;
+    margin: 0px auto 20px;
     display: block;
 }
 #footer_sprite li {
@@ -331,7 +331,7 @@ li:nth-child(2) a {
 }
 .wrapper.andSidebar .inner {
     width: 687px;
-    margin: 0 40px 50px 0;
+    margin: -20px 40px 50px 0;
     float: left;
 }
 .title {
@@ -339,7 +339,7 @@ li:nth-child(2) a {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 14pt;
-    margin: 50px 0 33px;
+    margin: 50px 0 10px;
 }
 #contact li, #contact li > a {
     color: #da4f29;
@@ -562,6 +562,8 @@ li:nth-child(2) a {
     width: 200px;
     float: left;
     margin: 0 40px 0 0;
+    font-size:14px;
+    color:#555555;
 }
 #providersGrid.grid li a {
     border: 1px solid #aaa;
@@ -615,7 +617,7 @@ li:nth-child(2) a {
 }
 
 #servicesGrid li#img-fg a {
-     background-position: -421px -208px;
+     background-position: -421px -209px;
 }
 
 #servicesGrid li#img-kt a {
@@ -623,11 +625,11 @@ li:nth-child(2) a {
 }
 
 #servicesGrid li#img-dm a {
-     background-position: 0px -205px;
+     background-position: 0px -207px;
 }
 
 #servicesGrid li#img-cfc a {
-     background-position: -846px 5px;
+     background-position: -842px 3px;
 }
 
 #servicesGrid li#img-pp a {
@@ -639,7 +641,7 @@ li:nth-child(2) a {
 }
 
 #servicesGrid li#img-els a {
-     background-position: -846px -205px;
+     background-position: -850px -209px;
 }
 
 #servicesGrid li {
@@ -656,7 +658,7 @@ li:nth-child(2) a {
     position: absolute;
     width: 65%;
     min-height: 100px;
-    top: 20%;
+    top: 10%;
     left: 17.5%;
     z-index: 2000;
     display: none;
@@ -666,7 +668,7 @@ li:nth-child(2) a {
     min-height: 50px;
     background: #fff;
     border: 1px solid #000;
-    margin: 10px auto;
+    margin: -20px auto;
     padding: 20px 40px;
     display: none;
     position: relative;
@@ -788,29 +790,38 @@ li:nth-child(2) a {
     float: left;
 }
 
-#els > div.wrapper #massage_inner .left {
-    float: left;
-    margin: 0;
-    width: 60%;
+#els > #massage_inner {
+    width: 100%;
+    margin: 0 auto;
 }
-#els > div.wrapper #massage_inner .left:nth-child(1) {
-    width: 35%;
-    margin: 0 20px 0 0;
+#els > #massage_inner div.wrapper {
+    width: 65%;
+    float: left;
+    margin-right: 2.5%;
 }
 
-#els > div.wrapper #massage_inner h4.highlight {
+#els #massage_inner div.sidebar {
+    float: left;
+    width: 30%;
+}
+#massage_info {}
+.sticky {
+    background: #fef376;
+}
+#els > #massage_inner h4.highlight {
     margin-top: 0px;
+}
+#els > #massage_inner div.sidebar p {
+    margin: 0 0 4px;
+}
+#els > #massage_inner div.sidebar p.last {
+    margin-bottom: 38px;
 }
 
 #els > div.wrapper #massage_inner img {
     display: block;
     margin: 0 0 10px 0;
     width: 100%;
-}
-
-#els > div.sidebar {
-    float: left;
-    width: 30%;
 }
 
 #shade {

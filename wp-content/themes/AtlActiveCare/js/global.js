@@ -1,9 +1,9 @@
 (function($){
     $('document').ready(function(){
-        if(window.location.hash.length > 0 && $('body').attr('class').split(" ")[1] == "page-id-9"){
-            //debugger
+        // if(window.location.hash.length > 0 && $('body').attr('class').split(" ")[1] == "page-id-9"){
+        if(window.location.hash.length > 0) {
             var id = window.location.hash;
-            var $elem = $('a[href="'+ id +'"]', '#servicesGrid');
+            var $elem = $('a[href="'+ id +'"]', '#servicesGrid, #providersGrid');
             window.setTimeout(function($elem){
                 $elem.trigger('click');
             }, 500, $elem);
