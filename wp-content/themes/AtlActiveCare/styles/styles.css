@@ -83,10 +83,10 @@ body, .highlight {
     font-family: 'Varela', sans-serif;
     font-weight: 100;
 }
-#wrapper { width: 960px; position: relative; overflow: hidden; margin: 0 auto;}
+#content-wrapper { width: 1300px; position: relative; overflow: hidden; margin: 0 auto;}
 #footer { width: 960px; overflow: hidden; margin: 0 auto; }
 #red-bar {
-     background-color: #9f1924;
+    background-color: #9f1924;
     background-image: -webkit-gradient(linear, left center, right center, from(#9f1924), to(#070504));
     background-image: -webkit-linear-gradient(left, #9f1924, #070504);
     background-image: -moz-linear-gradient(left, #9f1924, #070504);
@@ -95,14 +95,13 @@ body, .highlight {
     background-image: linear-gradient(left, #9f1924, #070504);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#9f1924', EndColorStr='#070504');
     width: 100%;
-    min-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 #header-meta {
     color: #fff;
-    width: 100%;
-    width: 1200px;
-    /* min-width: 1200px; */
-    text-align: center;
+    width: 1190px;
+    text-align: left;
     padding: 10px 0;
     font-size: 10pt;
     margin: 0 auto;
@@ -114,12 +113,22 @@ body, .highlight {
 #header-wrapper {
     background: #edece8;
     width: 100%;
-    min-width: 1500px;
     height: 175px;
     overflow: hidden;
 }
-#header {
+#header-wrapper .wrapper {
+    background: #EDECE8;
     width: 1200px;
+    height: 175px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#home_footer {
+    width: 100%;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
     margin: -10px auto;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -151,13 +160,13 @@ ul.sections > li {
     float: left;
 }
 ul.sections > li#logo-wrapper {
-    width: 215px;
+    width: 175px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 ul.sections > li#menu-wrapper{
-    width: 372px;
+    width: 415px;
 }
 ul.sections > li#cta-header {
     margin: 25px 0 0 25px;
@@ -175,24 +184,23 @@ ul.sections > li#cta-header p {
     background-image: url('../images/logo.png');
     background-size: 145px;
     background-repeat: no-repeat;
-    background-position: 30px 25px;
-
+    background-position: 5px 25px;
     font-size: 2em;
-    font-weight:bold;
-    margin: 5px 0 0 11px;
+    font-weight: bold;
+    margin: 5px 0 0 0px;
     padding: 40px 0 0;
     font-family: 'Raleway', sans-serif;
 }
 .tagline {
     font-size: 18pt;
-    margin: 55px 0 2px 32px;
+    margin: 55px 0 2px 9px;
     letter-spacing: 5px;
 }
 .sub-message {
     font-size: 10pt;
     color: #333;
     letter-spacing: 4px;
-    margin: 4px 0 0 32px;
+    margin: 4px 0 0 9px;
 }
 .sub-message span {
     letter-spacing: 0.02em;
@@ -203,7 +211,7 @@ ul.sections > li#cta-header p {
 #nav {
     border-left: 1px solid #999;
     border-right: 1px solid #999;
-    padding: 25px 0 18px;
+    padding: 25px 0 16px;
     margin: 25px 0 0 0;
 }
 #nav li {
@@ -211,7 +219,7 @@ ul.sections > li#cta-header p {
     line-height: 1;
     padding: 0;
     float: left;
-    width: 135px;
+    width: 160px;
 }
 li:nth-child(2) a {
     color: #58595b;
@@ -235,9 +243,18 @@ li:nth-child(2) a {
 #hero {
     position: relative;
     background-image: none;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 #hero img {
     max-width: 1918px;
+    margin: 0 auto;
+    width: 100%;
+}
+#hero .wrapper {
+    width: 1500px;
+    /*width: 100%;*/
     margin: 0 auto;
 }
 #hero-copy-wrapper {
@@ -246,10 +263,14 @@ li:nth-child(2) a {
     bottom: 13%;
     width: 100%;
     min-width: 1500px;
-    padding: 0 20% 0 8%;
+    padding: 0 20% 0 4%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+#hero-copy-wrapper .wrapper {
+    width: 1200px;
+    margin: 0 auto;
 }
 #hero h4 {
     padding: 25px 0;
@@ -257,7 +278,7 @@ li:nth-child(2) a {
     font-size: 13pt;
     line-height: 1.4;
     font-weight: 400;
-    width: 1100px;
+    width: 1200px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -265,11 +286,7 @@ li:nth-child(2) a {
 }
 
 #footer_sprite {
-    width: 1286px;
-        /*
-    max-width: 1500px;
-        min-width: 1100px;
-    */
+    width: 1200px;
     margin: 0px auto 20px;
     display: block;
 }
@@ -291,7 +308,7 @@ li:nth-child(2) a {
     text-shadow: 0 0 1px #333;
 }
 #footer_sprite li#active_release {
-    margin-left: 6.5%;
+    margin-left: 0;
 }
 #footer_sprite li#car_accident a{
     background-position: -201px 0;
@@ -326,6 +343,16 @@ li:nth-child(2) a {
     width: 1180px;
     margin: 0 auto;
 }
+
+.wrapper.the_content {
+    width: 960px;
+    margin: 20px auto 150px;
+}
+
+.post-thumbnail {
+    margin: 0 auto 30px;
+}
+
 .wrapper > h1.title {
     margin: 50px 0 33px 34px;
 }
@@ -609,7 +636,7 @@ li:nth-child(2) a {
 
 #servicesGrid li#img-aa a {
     background-color: #fff;
-    background-position: -201px 0px;
+    background-position: -209px 0px;
 }
 
 #servicesGrid li#img-ca a {
@@ -621,7 +648,7 @@ li:nth-child(2) a {
 }
 
 #servicesGrid li#img-kt a {
-     background-position: -216px -208px;
+     background-position: -212px -208px;
 }
 
 #servicesGrid li#img-dm a {
@@ -794,13 +821,13 @@ li:nth-child(2) a {
     width: 100%;
     margin: 0 auto;
 }
-#els > #massage_inner div.wrapper {
+#grid-content > div > .service_inner_block div.wrapper {
     width: 65%;
     float: left;
     margin-right: 2.5%;
 }
 
-#els #massage_inner div.sidebar {
+#grid-content .service_inner_block div.sidebar {
     float: left;
     width: 30%;
 }
@@ -823,7 +850,25 @@ li:nth-child(2) a {
     margin: 0 0 10px 0;
     width: 100%;
 }
+#aa .box h4.highlight {
+    margin: 0 0 15px;
+}
+#aa .box p {
+    margin: 0 0 5px;
+}
+#aa .box p.last {
+    margin: 0 0 35px 0;
+}
 
+#aa .box p.border {
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed #555;
+    padding: 0 0 10px;
+}
+#aa .box .highlight.italic {
+    margin: 15px 0 0 0;
+    font-style: italic;
+}
 #shade {
     position: absolute;
     top: 0;

@@ -41,7 +41,11 @@ function themeSetup(){
     register_nav_menus( array(
         'Primary' => 'Primary Navigation Menu',
     ));
+
+    #Post thumbnails
     add_theme_support( 'post-thumbnails' );
+    add_image_size( 'blog_featured_image', 300, 170);
+    add_image_size( 'single_landscape', 960, 9999);
 }
 
 function randomHero(){

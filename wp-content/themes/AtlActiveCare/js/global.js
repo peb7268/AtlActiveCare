@@ -17,7 +17,9 @@
                 $(selector).addClass('active');
 
                 var height      =  $(window).outerHeight() + $('#grid-content').outerHeight();
-                $('#shade').height(height);
+                var width       = $(window).outerWidth();
+                debugger;
+                $('#shade').height(height).width(width);
             });
         });
         $('a.close').on('click', function(e){
@@ -28,23 +30,27 @@
             rotateOffScreen(selector, offset);
         });
         function rotateOffScreen(selector, offset){
-                $(selector).css('marginLeft', offset);
-                $(selector).stop().animate({
-                    transform: '-90'
-                },
-                {
-                    duration: 300,
-                    step: function(now, fx) {
-                        $(this).css("transform", "rotate(" + now +"deg)");
-                        $(this).css("-webkit-transform", "rotate(" + now +"deg)");
-                        $(this).css("-moz-transform", "rotate(" + now +"deg)");
-                        $(this).css("-ms-transform", "rotate(" + now +"deg)");
-                    },
-                    complete: function(){
-                        $(this).removeAttr('class').removeAttr('style');
-                        $('#shade, #grid-content').fadeOut(100);
-                    }
-                  }, 'swing');
+                //$(selector).css('marginLeft', offset);
+                $(selector).fadeOut(100, function(){
+                    $(selector).removeClass('active').removeAttr('style');
+                    $('#shade').fadeOut(100);
+                });
+                // $(selector).stop().animate({
+                //     transform: '-90'
+                // },
+                // {
+                //     duration: 300,
+                //     step: function(now, fx) {
+                //         $(this).css("transform", "rotate(" + now +"deg)");
+                //         $(this).css("-webkit-transform", "rotate(" + now +"deg)");
+                //         $(this).css("-moz-transform", "rotate(" + now +"deg)");
+                //         $(this).css("-ms-transform", "rotate(" + now +"deg)");
+                //     },
+                //     complete: function(){
+                //         $(this).removeAttr('class').removeAttr('style');
+                //         $('#shade, #grid-content').fadeOut(100);
+                //     }
+                //   }, 'swing');
         }
 
         //Geolocation
