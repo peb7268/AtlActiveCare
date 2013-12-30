@@ -121,5 +121,9 @@
                 $(target, '#gallery #content').fadeIn(100);
             }).removeAttr('style');
         });
+
+        if($('#office').length > 0) {
+            $('#office li a').fancybox();
+        }
     });
 }(jQuery));

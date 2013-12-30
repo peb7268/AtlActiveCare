@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>"></link>
     <link href='http://fonts.googleapis.com/css?family=Varela|Raleway:400,200,800,900' rel='stylesheet' type='text/css'>
-    <?php wp_head() ?>
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="content-wrapper">

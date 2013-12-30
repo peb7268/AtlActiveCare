@@ -14,7 +14,6 @@ add_action('wp_loaded', 'init');
 function init(){
     themeSetup();
     registerScripts();
-    loadScripts();
     attatch_shortcodes();
     removeDefaults();
 }
@@ -27,16 +26,21 @@ function attatch_shortcodes() {
 }
 function registerScripts(){
     wp_register_script('global', SCRIPTS_DIR.'/global.js', array('jquery'), null, FALSE);
+    wp_register_script('fancybox', SCRIPTS_DIR.'/vendors/fancybox/source/jquery.fancybox.js', array('jquery', 'global'), null, FALSE);
+
+    wp_register_style( 'fancybox',  SCRIPTS_DIR.'/vendors/fancybox/source/jquery.fancybox.css', array(), null, 'all');
 }
 
 function loadScripts(){
     wp_enqueue_script('global');
     if(is_page(13)){
-        die('here');
+        wp_enqueue_script('fancybox');
+        wp_enqueue_style('fancybox');
     }
 }
 
 function themeSetup(){
+    add_action('wp', 'loadScripts');
     #WordPress Theme Setup
     register_nav_menus( array(
         'Primary' => 'Primary Navigation Menu',

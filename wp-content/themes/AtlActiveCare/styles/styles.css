@@ -1021,3 +1021,17 @@ form.wpcf7-form input[type="submit"]:hover {
 #gallery #gallery-nav li a { display: block; float: none;}
 #gallery #content { float: left; width: 960px; }
 #gallery #content .block { display: none; }
+
+#office li {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#office li a {
+    display: block;
+    width: 100%;
+}
+#office li a img {
+    width: 100%;
+}
