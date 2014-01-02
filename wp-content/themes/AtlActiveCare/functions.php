@@ -23,6 +23,7 @@ function removeDefaults() {
 }
 function attatch_shortcodes() {
     add_shortcode('image', 'image');
+    add_shortcode('pdf', 'pdf');
 }
 function registerScripts(){
     wp_register_script('global', SCRIPTS_DIR.'/global.js', array('jquery'), null, FALSE);
@@ -53,16 +54,20 @@ function themeSetup(){
 }
 
 function randomHero(){
-    $img_path = __DIR__.'/images';
+    $img_path = get_bloginfo('template_directory').'/images';
     $images = array('home_banner1.jpg', 'home_banner2.jpg', 'home_banner3.jpg', 'home_banner4.jpg');
     $key = array_rand($images);
     $path = $img_path.'/'.$images[$key];
-    $path = explode("/Applications/XAMPP/xamppfiles/htdocs/clients", $path);
-    echo "<img src='http://localhost/clients/".$path[1]."' >";
+    echo "<img src='". $path ."'>";
 }
 
 function image(){
     $dir = get_bloginfo('stylesheet_directory').'/images/';
+    return $dir;
+}
+
+function pdf(){
+    $dir = get_bloginfo('stylesheet_directory').'/docs/';
     return $dir;
 }
 

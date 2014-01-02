@@ -115,6 +115,7 @@ body, .highlight {
     width: 100%;
     height: 175px;
     overflow: hidden;
+    position: relative;
 }
 #header-wrapper .wrapper {
     background: #EDECE8;
@@ -404,6 +405,18 @@ li:nth-child(2) a {
 #contact li.last {
     border-bottom: none;
 }
+#contact li#forms ul {
+    width: 100%;
+}
+#contact li#forms ul li {
+    padding: 0;
+    line-height: 1.2;
+    border-bottom: 0;
+}
+#contact li#forms ul li a {
+    width: 100%;
+}
+
 /* -- New Patient -- */
 .page-id-14 {}
 .page-id-14 .sidebar ul#contact li span, .page-id-14 .sidebar ul#policies li span {
@@ -685,7 +698,7 @@ li:nth-child(2) a {
     position: absolute;
     width: 65%;
     min-height: 100px;
-    top: 10%;
+    top: 100px;
     left: 17.5%;
     z-index: 2000;
     display: none;
@@ -1017,21 +1030,22 @@ form.wpcf7-form input[type="submit"]:hover {
     margin: 0 20px 0 0;
     float: left;
 }
+#gallery-nav li:nth-child(2) a { color: #7B9EAE; }
 #gallery #gallery-nav li { float: none; display: block; }
 #gallery #gallery-nav li a { display: block; float: none;}
 #gallery #content { float: left; width: 960px; }
 #gallery #content .block { display: none; }
 
-#office li {
-    width: 300px;
+.page-id-13 #content li {
+   width: 250px;
     float: left;
-    margin-right: 10px;
+    margin-right: 40px;
     margin-bottom: 10px;
 }
-#office li a {
+.page-id-13 #content li a {
     display: block;
     width: 100%;
 }
-#office li a img {
+.page-id-13 #content li a img {
     width: 100%;
 }
