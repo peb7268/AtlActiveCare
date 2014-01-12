@@ -119,14 +119,84 @@
         //Gallery
         $('#gallery-nav li a').on('click', function(e){
             e.preventDefault();
+            console.log('clicked');
             var target = $(e.target).attr('href');
             $('.block', '#gallery #content').fadeOut(100, function(){
                 $(target, '#gallery #content').fadeIn(100);
             }).removeAttr('style');
         });
 
+          //Activate default grid
+         $('#gallery-nav li:first a').trigger('click');
+
         if($('#content ul').length > 0) {
             $('#content ul li a').fancybox();
         }
+
+        //socialWidgetWrapper
+        $('#socialWidgetWrapper:not("a")').on('click', function(e){
+            toggleSocial();
+
+        });
     });
+    function toggleSocial(){
+        if(! $('#social_buttons').is(':visible')){
+            showSocial();
+            return true;
+        }
+        if($('#social_buttons').is(':visible')) {
+            hideSocial();
+            return true;
+        }
+    }
+    function showSocial(){
+        $('#social_buttons').show().css({
+            'height'   : '10',
+            'overflow' : 'hidden'
+        }).animate({
+            'width' : '375'
+        }, 100, function(){
+            $(this).delay(200).animate({
+                'paddingTop': '10',
+                'paddingBottom': '10',
+                'minHeight' : '130',
+                'overflow' : 'visible'
+            }, 100);
+        });
+    }
+    function hideSocial(){
+        //.show().css('height', '10')
+        $('#social_buttons').animate({
+            'minHeight' : '0'
+        }, 100, function(){
+            $(this).delay(200).animate({
+                'paddingTop': '0',
+                'paddingBottom': '0',
+                'width' : '0'
+            }, 100, function(){
+                $(this).removeAttr('style');
+            });
+        });
+    }
+
+
+    //Social Code Snippets
+    //FB
+   (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=187996341275269";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    //Twitter
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+    //GP
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
 }(jQuery));

@@ -1,4 +1,5 @@
 <?php
+
 define('THEME_DIR', get_template_directory_uri());
 define('CSS_DIR', THEME_DIR.'/styles');
 #define('IMG_DIR', THEME_DIR.'/images');

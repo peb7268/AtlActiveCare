@@ -390,15 +390,28 @@ li:nth-child(2) a {
     /*border-bottom: 1px dashed #777;*/
     position: relative;
 }
-#contact li {
-    line-height: 4;
+#contact > li {
+    line-height: 1.4;
     padding-left: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+#contact > li p {
+    margin-top: 0px;
+    font-weight: normal;
+    font-size: 10pt;
+}
+#new_patient ul#contact > li p span.big {
+    display: inline;
+    height: inherit;
+    position: inherit;
+    width: inherit;
+    background-image: none;
+    font-weight: bold;
 }
 #contact li#npf {
     line-height: 4.5;
 }
-#contact li#npf span {
+#contact li#forms span {
     background-position: -483px -160px;
     height: 60px;
 }
@@ -1024,7 +1037,7 @@ form.wpcf7-form input[type="submit"]:hover {
 }
 
 /*-- Gallery ------------------------------------------------------------------*/
-#gallery {}
+#gallery { margin-bottom: 150px; overflow: hidden; }
 #gallery #gallery-nav {
     width: 100px;
     margin: 0 20px 0 0;
@@ -1039,8 +1052,9 @@ form.wpcf7-form input[type="submit"]:hover {
 .page-id-13 #content li {
    width: 250px;
     float: left;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+    overflow: hidden;
+    height: 170px;
 }
 .page-id-13 #content li a {
     display: block;
@@ -1048,4 +1062,68 @@ form.wpcf7-form input[type="submit"]:hover {
 }
 .page-id-13 #content li a img {
     width: 100%;
+}
+
+
+/* -- Social --*/
+#socialWidgetWrapper {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 150px;
+    background: #3b5998;
+    top: 45px;
+    z-index: 9999;
+    background-image: url('../images/like.png');
+    background-repeat: no-repeat;
+    background-position: 0 110px;
+}
+#socialWidgetWrapper h4 {
+    color: #FFF;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-align: center;
+    line-height: 5;
+    font-size: 20pt;
+    width: 43px;
+}
+#social_buttons{
+    display: none;
+    position: fixed;
+    top: 45px;
+    left: 50px;
+    background: #1d2c4c;
+    width: 0;
+    overflow: hidden;
+    color: #fff;
+    height: 0;
+}
+#social_buttons > ul#links {
+    padding-top: 5px;
+    padding-left: 35px;
+    width: 95px;
+}
+#social_buttons > ul#links a {
+    color: #EFEFEF;
+    float: none;
+    width: initial;
+    margin: initial;
+    line-height: initial;
+    display: initial;
+}
+#social_buttons > ul#links a:hover {
+    color: #fff;
+}
+#social_buttons > ul#links li {
+    margin-bottom: 13px;
+}
+
+#social_buttons > ul#buttons {
+    padding-top: 6px;
+    width: 100px;
+}
+
+#social_buttons > ul#buttons li {
+    margin-bottom: 12px;
 }
