@@ -328,12 +328,11 @@ li:nth-child(2) a {
 }
 #new_patient {
     background: #d7e2e6;
-    /* width: 325px; */
-    width: 270px;
+    width: 322px;
     margin-right: 30px;
     margin-bottom: 150px;
     float: left;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     box-sizing: border-box;
 }
 .body {
@@ -370,8 +369,8 @@ li:nth-child(2) a {
     margin: 50px 0 10px;
 }
 #contact li, #contact li > a {
-    color: #da4f29;
-    font-size: 9pt;
+    color: #9F1924;
+    font-size: 10pt;
     font-weight: bold;
     line-height: 1;
     margin: 0;
@@ -390,11 +389,36 @@ li:nth-child(2) a {
     /*border-bottom: 1px dashed #777;*/
     position: relative;
 }
+
+#policies {
+	margin: 0;
+	padding: 0;
+}
+
+#contact {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
 #contact > li {
     line-height: 1.4;
     padding-left: 80px;
     margin-bottom: 15px;
 }
+
+.page-id-14 .sidebar ul li {
+	border-bottom: none;
+}
+
+.page-id-14 #contact > li:nth-child(1){
+	border-bottom: none;
+}
+
+.page-id-14 #contact > li:nth-child(2){
+	border-bottom: 1px dashed #555;
+	padding-bottom: 12px;
+}
+
+
 #contact > li p {
     margin-top: 0px;
     font-weight: normal;
@@ -422,12 +446,19 @@ li:nth-child(2) a {
     width: 100%;
 }
 #contact li#forms ul li {
-    padding: 0;
     line-height: 1.2;
-    border-bottom: 0;
+	 border-bottom: 1px dotted;
+	 margin: 0 0 3px 0;
+	 padding: 0 0 2px;
 }
+
 #contact li#forms ul li a {
     width: 100%;
+}
+
+#policies li p {
+	font-weight: normal;
+	font-size: 10pt;
 }
 
 /* -- New Patient -- */
@@ -467,7 +498,11 @@ li:nth-child(2) a {
     overflow: hidden;
 }
 #policies li strong {
-    font-weight: bold;
+   font-weight: bold;
+	font-size: 10pt;
+	text-transform: uppercase;
+	color: #555;
+	font-family: sans-serif;
 }
 #policies li img {
     width: 25px;
@@ -1071,8 +1106,9 @@ form.wpcf7-form input[type="submit"]:hover {
     display: block;
     width: 50px;
     height: 150px;
+    right: 0;
     background: #3b5998;
-    top: 45px;
+    top: 52px;
     z-index: 9999;
     background-image: url('../images/like.png');
     background-repeat: no-repeat;
@@ -1091,8 +1127,8 @@ form.wpcf7-form input[type="submit"]:hover {
 #social_buttons{
     display: none;
     position: fixed;
-    top: 45px;
-    left: 50px;
+    top: 52px;
+	 right: 50px;
     background: #1d2c4c;
     width: 0;
     overflow: hidden;
@@ -1102,7 +1138,7 @@ form.wpcf7-form input[type="submit"]:hover {
 #social_buttons > ul#links {
     padding-top: 5px;
     padding-left: 35px;
-    width: 95px;
+    width: 120px;
 }
 #social_buttons > ul#links a {
     color: #EFEFEF;
